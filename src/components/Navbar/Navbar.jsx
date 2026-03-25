@@ -28,9 +28,9 @@ const Navbar = () => {
 
   const menuItems = [
     { id: "about", label: "About Us" },
-    { id: "service", label: "Services" },
-    { id: "approach", label: "Our Process" },
-    { id: "work", label: "Projects" },
+    { id: "services", label: "Services" },
+    { id: "process", label: "Our Process" },
+    { id: "work", label: "Our Work" },
     { id: "contact", label: "Contact" },
   ];
 
@@ -43,7 +43,7 @@ const Navbar = () => {
       <div className="text-white py-5 flex justify-between items-center">
         <div className="text-lg font-semibold cursor-pointer">
           <span className="text-[#8245ec]">&lt;</span>
-          <span>Equilx</span>
+          <span>IT Solutions</span>
           <span className="text-[#8245ec]">/&gt;</span>
         </div>
 

@@ -44,7 +44,7 @@ const Services = () => (
       <h2 className="text-3xl sm:text-4xl font-bold text-white">SERVICES</h2>
       <div className="w-24 h-1 bg-[#8245ec] mx-auto mt-2"></div>
       <p className="text-gray-400 mt-4 text-lg font-semibold">
-        I provide high-quality web development services to build scalable and
+        We provide high-quality web development services to build scalable and
         user-friendly applications
       </p>
     </div>

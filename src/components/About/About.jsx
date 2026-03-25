@@ -37,7 +37,7 @@ const About = () => {
           </h2>
 
           <p className="text-gray-400 mt-6 text-lg leading-relaxed">
-            Equilx is a modern IT solutions company focused on building
+            IT Solutions is a modern IT company focused on building
             scalable, web <br />applications. We help startups and
             businesses transform their ideas into powerful <br />digital products
             using the latest technologies.
