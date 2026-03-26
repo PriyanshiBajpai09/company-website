@@ -9,38 +9,46 @@ const About = () => {
       id="about"
       className="py-10 px-[7vw] md:px-[7vw] lg:px-[13vw] mt-20"
     >
-      <div className="flex flex-col-reverse md:flex-row items-center gap-10 md:gap-16 lg:gap-24">
-        <div className="md:w-[60%] lg:w-[65%] flex-shrink-0 text-center md:text-left mt-10 md:mt-0">
-          <h1 className="text-4xl sm:text-5xl md:text-6xl font-bold text-white leading-tight">
+      <div className="flex flex-col-reverse md:flex-row items-center gap-10 lg:gap-20">
+        {/* LEFT */}
+        <div className="flex-1 text-center md:text-left">
+          <h1 className="text-3xl sm:text-4xl md:text-5xl font-bold text-white leading-tight">
             We Build
-            <span className="text-[#8245ec]"> Digital Solutions</span> 🚀
+            <span className="text-[#8245ec] text-3xl sm:text-4xl md:text-5xl">
+              {" "}
+              Digital Solutions
+            </span>{" "}
+            🚀
           </h1>
 
-          <h2 className="text-xl sm:text-2xl md:text-3xl font-semibold mt-6 text-gray-300 whitespace-nowrap">
-            <span className="text-white">We specialize in </span>
-            <TypeAnimation
-              sequence={[
-                "Web Development",
-                1500,
-                "MERN Stack Applications",
-                1500,
-                "UI/UX Design",
-                1500,
-                "Scalable Systems",
-                1500,
-              ]}
-              wrapper="span"
-              speed={50}
-              repeat={Infinity}
-              className="text-[#8245ec]"
-            />
+          <h2 className="text-xl sm:text-2xl md:text-3xl font-semibold mt-6 text-gray-300">
+            {/* Line 1 */}
+            <div className="text-white">We specialize in</div>
+
+            {/* Line 2 (Typing) */}
+            <div className="text-[#8245ec] text-2xl mt-2">
+              <TypeAnimation
+                sequence={[
+                  "Web Development",
+                  1500,
+                  "MERN Stack Applications",
+                  1500,
+                  "UI/UX Design",
+                  1500,
+                  "Scalable Systems",
+                  1500,
+                ]}
+                wrapper="span"
+                speed={50}
+                repeat={Infinity}
+              />
+            </div>
           </h2>
 
-          <p className="text-gray-400 mt-6 text-lg leading-relaxed">
-            IT Solutions is a modern IT company focused on building
-            scalable, web <br />applications. We help startups and
-            businesses transform their ideas into powerful <br />digital products
-            using the latest technologies.
+          <p className="text-gray-400 mt-6 text-lg leading-relaxed max-w-xl mx-auto md:mx-0">
+            IT Solutions is a modern IT company focused on building scalable web
+            applications. We help startups and businesses transform their ideas
+            into powerful digital products using the latest technologies.
           </p>
 
           <a
@@ -51,9 +59,10 @@ const About = () => {
           </a>
         </div>
 
-        <div className="md:w-[40%] lg:w-[35%] flex justify-center md:justify-end flex-shrink-0 pr-4 md:pr-8 lg:pr-12">
+        {/* RIGHT */}
+        <div className="flex-1 flex justify-center md:justify-end">
           <Tilt
-            className="aspect-square w-60 sm:w-72 md:w-[28rem] flex-shrink-0 border-4 border-purple-700 rounded-full overflow-hidden"
+            className="w-52 sm:w-64 md:w-80 lg:w-96 aspect-square border-4 border-purple-700 rounded-full overflow-hidden"
             tiltMaxAngleX={20}
             tiltMaxAngleY={20}
             perspective={1000}
